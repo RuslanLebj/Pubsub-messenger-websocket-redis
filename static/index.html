@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат Приложение</title>
+    <style>
+        #clients, #chat {
+            border: 1px solid #888;
+            padding: 10px;
+            margin-bottom: 15px;
+            overflow-y: auto;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        #clients {
+            height: 120px;
+        }
+        #chat {
+            height: 350px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        h1, h3 {
+            color: #333;
+        }
+        input, button {
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать в чат</h1>
+
+    <h3>Сейчас онлайн</h3>
+    <div id="clients"></div>
+
+    <h3>История сообщений</h3>
+    <div id="chat"></div>
+
+    <input type="text" id="message" placeholder="Напишите сообщение">
+    <button onclick="sendMessage()">Отправить</button>
+
+    <script src="chat.js"></script>
+</body>
+</html>
